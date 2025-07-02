@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimiere deinen Prompt</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+
+        /* Gradient text styling for the h1 */
+        .gradient-text {
+            background: linear-gradient(to right, #6366F1, #EC4899); /* Blue to Pink gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent; /* Fallback for browsers that don't support background-clip */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-2xl shadow-xl max-w-2xl w-full text-center">
+        <!-- H1 with gradient text -->
+        <h1 class="text-4xl font-extrabold mb-6 gradient-text">Optimiere deinen Prompt</h1>
+        <p class="text-gray-600 mb-8">Klicke auf den Button, um deinen Prompt zu optimieren.</p>
+
+        <button id="redirectButton" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300">
+            Prompt-Optimierer starten
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('redirectButton').addEventListener('click', () => {
+            // Open the specified link in a new tab
+            window.open('https://g.co/gemini/share/a774858038e8', '_blank');
+        });
+    </script>
+</body>
+</html>
